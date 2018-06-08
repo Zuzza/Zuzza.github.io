@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+div {
+	text-align: center;
+}
+
+p {
+	font-size: 80%;
+	font-family: sans-serif;
+}
+
+.question {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+}
+
+
+.question img {
+	width: 100%;
+	height: auto;
+}
+
+.question p {
+	text-align: center;
+}
+
+.red {
+	color: red;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+#qNum {
+	text-align: right;
+	margin-right: 10%;
+}
+
+.hidden {
+	display: none;
+}
+
+
+   

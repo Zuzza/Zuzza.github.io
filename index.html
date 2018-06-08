@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ArtHistory</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="themes/ArtGame.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.11.1.min.js"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js"></script>
+<script src="Scripts.js"></script>
+</head>
+
+<body>
+
+<!-------------Menu Page--------------------->
+<div data-role="page" id="menu">
+  <div data-role="header">
+   <a href="#menu" >Exit</a>
+    <h1>Art History Quiz</h1>
+  </div>
+  <div data-role="content">
+  	<div class="question">
+    
+  	    <p class="red">Welcome to ArtQuiz!</p>
+  	    <img id="brain" src="images/brain-art.jpg"/>
+  	    &nbsp
+      	<a href="#game" data-role="button">Start!</a>
+      	<a href="#scores" data-role="button">High Scores</a>
+      	<a href="#instructions" data-role="button">Instructions</a>
+      </div>
+    </div>
+    
+  <div data-role="footer">
+    <h4>Zuzanna Kanafa</h4>
+  </div>
+</div>
+
+<!-------------Game Page--------------------->
+<div data-role="page" id="game">
+  <div data-role="header">
+   <a href="#menu" >Exit</a>
+    <h1>Art History Quiz</h1>
+  </div>
+  <div data-role="content">
+  <p id="qNum">question 1 out of 7</p>
+  	<div class="question">
+    	<img id="qImg" src="images/1.jpg" width="auto" height="auto" alt=""/>
+    	
+    	<p id="questionTxt">'The Luncheon of the Boating Party', was painted by famous impresionist artist. Who is the author of this painting?</p>
+    	<div data-role="fieldcontain">
+    	<!--<fieldset data-role="controlgroup">
+    	    <input type="radio" name="answer" id="ans1" value="" />
+    	    <label for="ans1"></label>
+    	    <input type="radio" name="answer" id="ans2" value="" />
+    	    <label for="ans2"></label>
+    	    <input type="radio" name="answer" id="ans3" value="" />
+    	    <label for="ans3"></label>
+    	    <input type="radio" name="answer" id="ans4" value="" />
+    	    <label for="ans4"></label>
+  	    </fieldset>-->
+  	    
+    	<div data-role="controlgroup">
+    	  <button id="btn1" value="1" onClick="getValue(this.value);">Button</button>
+    	  <button id="btn2" value="2" onClick="getValue(this.value);">Button</button>
+    	  <button id="btn3" value="3" onClick="getValue(this.value);">Button</button>
+    	  <button id="btn4" value="4" onClick="getValue(this.value);">Button</button>
+  	    </div>
+		
+  	    
+  	    <div class="hidden" id="feedbackBox">
+  	    	<p class="red" id="feedback">Correct!</p>
+  	    	<button id="nextBtn" onClick="nextQ();">Next</button>
+  	    </div>
+  	    <div class="hidden" id="fin">
+  	    	<a href="#scores" data-role="button">End</a>
+		</div>
+  	    
+      </div>
+    </div>
+    
+  </div>
+  <div data-role="footer">
+    <h4>Zuzanna Kanafa</h4>
+  </div>
+</div>
+
+<!-------------High Scores--------------------->
+<div data-role="page" id="scores">
+  <div data-role="header">
+   <a href="#menu" >Exit</a>
+    <h1>Art History Quiz</h1>
+  </div>
+  <div data-role="content">
+  	<div class="question">
+    
+  	    <p class="red">High Scores</p>
+  	    <table style="margin-right: auto; margin-left: auto;" width="50%" border="0">
+		  <tbody>
+			<tr>
+			  <td>1.</td>
+			  <td>User Name</td>
+			  <td>7 points</td>
+			</tr>
+			<tr>
+		  	  <td>2.</td>
+			  <td>User Name</td>
+			  <td>6 points</td>
+			</tr>
+			<tr>
+		  	  <td>3.</td>
+			  <td>User Name</td>
+			  <td>5 points</td>
+			</tr>
+			<tr>
+		  	  <td>4.</td>
+			  <td>User Name</td>
+			  <td>4 points</td>
+			</tr>
+			<tr>
+		  	  <td>5.</td>
+			  <td>User Name</td>
+			  <td>3 points</td>
+			</tr>
+		  </tbody>
+		</table>
+  	    <p></p>
+  	    <a href="#menu" data-role="button" data-inline="true">Back to main menu</a>
+      </div>
+    </div>
+   
+  <div data-role="footer">
+    <h4>Zuzanna Kanafa</h4>
+  </div>
+</div>
+
+<!-------------Instructions--------------------->
+<div data-role="page" id="instructions">
+  <div data-role="header">
+   <a href="#menu" >Exit</a>
+    <h1>Art History Quiz</h1>
+  </div>
+  <div data-role="content">
+  	<div class="question">
+    
+  	    <p class="red">Instructions</p>
+  	    <p >Instructions</p>
+  	    <a href="#menu" data-role="button" data-inline="true">Back to main menu</a>
+  	</div> 
+  </div>
+  <div data-role="footer">
+	<h4>Zuzanna Kanafa</h4>
+  </div>
+</div>
+</body>
+</html>
